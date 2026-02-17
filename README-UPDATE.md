@@ -282,8 +282,8 @@ python -m http.server 9000
 ## 📞 Support & Contact
 
 **Company:** KS Enterprises  
-**Email:** vaishnavipadgal@gmail.com  
-**Phone:** +91-9270220876  
+**Email:** ksenterprises.pandharpur@gmail.com  
+**Phone:** +91-9322614543  
 **Locations:** Delhi, Faridabad, Sultanpur (UP), Bangalore
 
 ---

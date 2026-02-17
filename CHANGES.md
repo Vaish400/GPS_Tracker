@@ -187,8 +187,8 @@ Modify the video wrapper height in CSS or HTML height attribute:
 ## Support & Contact
 
 **Website:** KS Enterprises GPS Tracking Solutions  
-**Email:** vaishnavipadgal@gmail.com  
-**Phone:** +91-9270220876  
+**Email:** ksenterprises.pandharpur@gmail.com  
+**Phone:** +91-9322614543  
 **Offices:** Delhi, Faridabad, Sultanpur (UP), Bangalore
 
 ## Next Steps

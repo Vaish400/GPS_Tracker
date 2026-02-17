@@ -200,8 +200,8 @@ When ready for production:
 
 For issues:
 
-- Email: vaishnavipadgal@gmail.com
-- Phone: +91-9270220876
+- Email: ksenterprises.pandharpur@gmail.com
+- Phone: +91-9322614543
 - Offices: Delhi, Faridabad, Sultanpur (UP), Bangalore
 
 ---
