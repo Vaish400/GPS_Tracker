@@ -959,7 +959,297 @@
             box-shadow: var(--shadow-sm);
         }
 
+        /* ========== ENHANCED SERVICE CARDS ========== */
+        .service-card {
+            position: relative;
+            padding: 40px 28px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+            border: 1px solid rgba(31, 75, 138, 0.1);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            border-radius: 0 0 32px 32px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover::after {
+            opacity: 1;
+        }
+
+        .card-icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(31, 75, 138, 0.1) 0%, rgba(45, 95, 163, 0.05) 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .card-icon-wrapper {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .service-card:hover .card-icon-wrapper i {
+            -webkit-text-fill-color: white;
+            color: white;
+        }
+
+        .card-subtitle {
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        /* ========== WHY CHOOSE US CARDS ========== */
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 40px;
+        }
+
+        .why-card {
+            background: white;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(31, 75, 138, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(31, 75, 138, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(31, 75, 138, 0.15);
+        }
+
+        .why-card:hover::before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .why-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-card:hover .why-icon {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 10px 30px rgba(31, 75, 138, 0.3);
+        }
+
+        .why-icon i {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .why-card h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ========== MY WORKING CULTURE SECTION ========== */
+        .culture-section {
+            background: linear-gradient(135deg, #f0f5ff 0%, #ffffff 50%, #f5f9ff 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .culture-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -300px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(31, 75, 138, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .culture-video-container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .culture-video-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .culture-video-item.right-layout {
+            direction: rtl;
+        }
+
+        .culture-video-item.right-layout > * {
+            direction: ltr;
+        }
+
+        .culture-video-content {
+            position: relative;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(31, 75, 138, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .culture-video-item:hover .video-wrapper {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 70px rgba(31, 75, 138, 0.3);
+        }
+
+        .video-wrapper iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .culture-video-text {
+            padding: 20px;
+        }
+
+        .culture-video-text h3 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .culture-video-text p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .culture-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .culture-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .culture-features li:hover {
+            background: rgba(31, 75, 138, 0.05);
+            padding-left: 20px;
+        }
+
+        .culture-features i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* ========== SERVICES & WHY CHOOSE WRAPPER ========== */
+        .services-why-section {
+            position: relative;
+            z-index: 1;
+        }
+
+        .services-container {
+            margin-bottom: 80px;
+        }
+
+        .why-choose-container {
+            padding-top: 40px;
+            border-top: 2px solid rgba(31, 75, 138, 0.1);
+        }
+
+
         /* responsive */
+        @media (max-width: 1024px) {
+            .culture-video-item {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .culture-video-item.right-layout {
+                direction: ltr;
+            }
+
+            .video-wrapper iframe {
+                min-height: 350px;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-flex {
                 flex-direction: column;
@@ -999,6 +1289,26 @@
 
             .card {
                 padding: 30px 20px;
+            }
+
+            .culture-video-item {
+                grid-template-columns: 1fr;
+            }
+
+            .culture-video-text h3 {
+                font-size: 1.6rem;
+            }
+
+            .culture-video-text p {
+                font-size: 1rem;
+            }
+
+            .video-wrapper iframe {
+                min-height: 300px;
+            }
+
+            .why-choose-grid {
+                grid-template-columns: 1fr;
             }
         }
 

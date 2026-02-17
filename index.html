@@ -1,567 +1,908 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KS Enterprises | GPS Tracking Solutions</title>
     <!-- Font Awesome 6 (free) for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Scroll Progress Indicator -->
     <div class="scroll-indicator" id="scrollIndicator"></div>
 
     <!-- Navbar -->
     <div class="navbar" id="navbar">
-        <div class="container nav-flex">
-            <div class="logo">
-                <h2>KS ENTERPRISES</h2>
-                <span>Reliable & Smart GPS Tracking</span>
-            </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#products">Products</a>
-                <a href="#contact">Contact</a>
-            </div>
+      <div class="container nav-flex">
+        <div class="logo">
+          <h2>KS ENTERPRISES</h2>
+          <span>Reliable & Smart GPS Tracking</span>
         </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </div>
 
     <!-- HERO / HOME -->
     <section id="home" class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h1>Track <span>Smarter</span>, Drive <span>Safer</span>, Manage <span>Better</span></h1>
-                <p>Real‑time GPS tracking, fleet management, and safety solutions for vehicles, businesses & families. Experience the future of location intelligence.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-video"></i> Request a Demo
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-file-invoice"></i> Get a Free Quote
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-carousel">
-                    <div class="carousel-container" id="heroCarousel">
-                        <button class="carousel-nav prev" onclick="changeSlide('heroCarousel', -1)">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="carousel-nav next" onclick="changeSlide('heroCarousel', 1)">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                        <div class="carousel-slides" id="heroCarouselSlides">
-                            <div class="carousel-slide">
-                                <img src="assets/img1.jpeg" alt="GPS Tracking Device 1">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="assets/img2.jpeg" alt="GPS Tracking Device 2">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="assets/img3.jpeg" alt="GPS Tracking Device 3">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-dots" id="heroCarouselDots">
-                        <button class="carousel-dot active" onclick="goToSlide('heroCarousel', 0)"></button>
-                        <button class="carousel-dot" onclick="goToSlide('heroCarousel', 1)"></button>
-                        <button class="carousel-dot" onclick="goToSlide('heroCarousel', 2)"></button>
-                    </div>
-                </div>
-            </div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>
+            Track <span>Smarter</span>, Drive <span>Safer</span>, Manage
+            <span>Better</span>
+          </h1>
+          <p>
+            Real‑time GPS tracking, fleet management, and safety solutions for
+            vehicles, businesses & families. Experience the future of location
+            intelligence.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-video"></i> Request a Demo
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-file-invoice"></i> Get a Free Quote
+            </a>
+          </div>
         </div>
+        <div class="hero-image">
+          <div class="image-carousel">
+            <div class="carousel-container" id="heroCarousel">
+              <button
+                class="carousel-nav prev"
+                onclick="changeSlide('heroCarousel', -1)"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="carousel-nav next"
+                onclick="changeSlide('heroCarousel', 1)"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="carousel-slides" id="heroCarouselSlides">
+                <div class="carousel-slide">
+                  <img src="assets/img1.jpeg" alt="GPS Tracking Device 1" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img2.jpeg" alt="GPS Tracking Device 2" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="assets/img3.jpeg" alt="GPS Tracking Device 3" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-dots" id="heroCarouselDots">
+              <button
+                class="carousel-dot active"
+                onclick="goToSlide('heroCarousel', 0)"
+              ></button>
+              <button
+                class="carousel-dot"
+                onclick="goToSlide('heroCarousel', 1)"
+              ></button>
+              <button
+                class="carousel-dot"
+                onclick="goToSlide('heroCarousel', 2)"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- OUR SERVICES -->
-    <section id="services" class="container" style="margin: 100px auto;">
+    <!-- OUR SERVICES & WHY CHOOSE US COMBINED -->
+    <section
+      id="services"
+      class="container services-why-section"
+      style="margin: 100px auto"
+    >
+      <!-- OUR SERVICES -->
+      <div class="services-container">
         <h2 class="section-title">Our Services</h2>
-        <div class="grid-3">
-            <!-- Vehicle GPS Tracking card -->
-            <div class="card">
-                <i class="fas fa-car"></i>
-                <h3>🚗 Vehicle GPS Tracking</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-circle-check"></i> Real-time live tracking</li>
-                    <li><i class="fas fa-circle-check"></i> Route history playback</li>
-                    <li><i class="fas fa-circle-check"></i> Geo-fencing alerts</li>
-                    <li><i class="fas fa-circle-check"></i> Engine on/off status</li>
-                    <li><i class="fas fa-circle-check"></i> Speed monitoring</li>
-                </ul>
+        <div class="grid-4">
+          <!-- Advanced GPS Tracking card -->
+          <div class="card service-card">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-map-pin"></i>
             </div>
-            <!-- Fleet Management -->
-            <div class="card">
-                <i class="fas fa-truck-fast"></i>
-                <h3>🚛 Fleet Management</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-circle-check"></i> Multiple vehicle monitoring</li>
-                    <li><i class="fas fa-circle-check"></i> Driver performance analysis</li>
-                    <li><i class="fas fa-circle-check"></i> Fuel monitoring system</li>
-                    <li><i class="fas fa-circle-check"></i> Centralized dashboard</li>
-                    <li><i class="fas fa-circle-check"></i> Operational reports</li>
-                </ul>
+            <h3>Advanced GPS Tracking</h3>
+            <p class="card-subtitle">Live Vehicle Tracking</p>
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-circle-check"></i> Live tracking of vehicles with accurate location data
+              </li>
+              <li>
+                <i class="fas fa-circle-check"></i> History playback
+              </li>
+            </ul>
+          </div>
+          <!-- Real-Time Fleet Monitoring -->
+          <div class="card service-card">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-truck"></i>
             </div>
-            <!-- Personal & safety / Installation -->
-            <div class="card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>👨‍👩‍👧 Personal & Safety</h3>
-                <ul class="service-list">
-                    <li><i class="fas fa-bus"></i> School bus tracking</li>
-                    <li><i class="fas fa-child"></i> Child safety GPS</li>
-                    <li><i class="fas fa-user-shield"></i> Senior citizen trackers</li>
-                    <li><i class="fas fa-tools"></i> Professional installation</li>
-                    <li><i class="fas fa-headset"></i> 24/7 support & AMC</li>
-                </ul>
+            <h3>Real-Time Fleet Monitoring</h3>
+            <p class="card-subtitle">Fleet Visibility & Control</p>
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-circle-check"></i> 24/7 monitoring for real-time visibility
+              </li>
+              <li>
+                <i class="fas fa-circle-check"></i> Alerts and reporting of fleet activities
+              </li>
+            </ul>
+          </div>
+          <!-- Route Optimization -->
+          <div class="card service-card">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-route"></i>
             </div>
+            <h3>Route Optimization</h3>
+            <p class="card-subtitle">Smart Route Planning</p>
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-circle-check"></i> AI-powered route planning
+              </li>
+              <li>
+                <i class="fas fa-circle-check"></i> Reduce fuel consumption & delivery times
+              </li>
+            </ul>
+          </div>
+          <!-- Vehicle Diagnostics & Reports -->
+          <div class="card service-card">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3>Vehicle Diagnostics & Reports</h3>
+            <p class="card-subtitle">Vehicle Health Monitoring</p>
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-circle-check"></i> Detailed diagnostics to monitor vehicle health
+              </li>
+              <li>
+                <i class="fas fa-circle-check"></i> Fuel usage and driver behavior analysis
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Additional features -->
         <div class="features-banner">
-            <span><i class="fas fa-map"></i> Route tracing sheets</span>
-            <span><i class="fas fa-history"></i> History & status</span>
-            <span><i class="fas fa-chart-line"></i> Performance analytics</span>
-            <span><i class="fas fa-tachometer-alt"></i> Installation & maintenance</span>
+          <span><i class="fas fa-map"></i> Route tracing sheets</span>
+          <span><i class="fas fa-history"></i> History & status</span>
+          <span><i class="fas fa-chart-line"></i> Performance analytics</span>
+          <span
+            ><i class="fas fa-tachometer-alt"></i> Installation &
+            maintenance</span
+          >
         </div>
+      </div>
+
+      <!-- WHY CHOOSE US SECTION -->
+      <div class="why-choose-container" style="margin-top: 120px">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="why-choose-grid">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Experience & Expertise</h3>
+            <p>
+              Proven track record in GPS-based logistics solutions with 10+
+              years of industry experience
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3>Cost & Fuel Savings</h3>
+            <p>
+              Optimize routes to reduce operational costs and fuel consumption
+              by up to 30%
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-zap"></i>
+            </div>
+            <h3>Improved Efficiency</h3>
+            <p>
+              Enhance supply chain efficiency with real-time data and smart
+              algorithms
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock customer support to ensure smooth operations</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-cog"></i>
+            </div>
+            <h3>Custom Solutions</h3>
+            <p>
+              Tailored GPS tracking and logistics solutions to meet your
+              specific needs
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3>Security & Privacy</h3>
+            <p>
+              Enterprise-grade security with encrypted data transmission and
+              storage
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- PRODUCTS -->
-    <section id="products" class="container" style="margin: 100px auto;">
-        <h2 class="section-title">Our Products</h2>
-        <div class="grid-4">
-            <div class="card">
-                <i class="fas fa-map-pin"></i>
-                <h3>Standard GPS</h3>
-                <p>Real-time & accurate tracking for personal vehicles</p>
+    <!-- MY WORKING CULTURE - VIDEO SECTION -->
+    <section class="culture-section" style="margin: 120px auto">
+      <div class="container">
+        <h2 class="section-title">My Working Culture</h2>
+
+        <!-- Video Layout - Alternating Left and Right -->
+        <div class="culture-video-container">
+          <!-- Video 1 - Left Layout -->
+          <div class="culture-video-item left-layout">
+            <div class="culture-video-content">
+              <div class="video-wrapper">
+                <video width="100%" height="400" controls style="border-radius: 16px;">
+                  <source src="assets/vedio.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
-            <div class="card">
-                <i class="fas fa-truck"></i>
-                <h3>Advanced Fleet</h3>
-                <p>Fuel monitoring + vehicle diagnostics</p>
+            <div class="culture-video-text">
+              <h3>Teamwork & Innovation</h3>
+              <p>
+                Our team believes in collaborative problem-solving and
+                continuous innovation. We foster an environment where every team
+                member's ideas are valued and encouraged.
+              </p>
+              <ul class="culture-features">
+                <li><i class="fas fa-check"></i> Collaborative workspace</li>
+                <li><i class="fas fa-check"></i> Innovation-driven culture</li>
+                <li><i class="fas fa-check"></i> Regular team activities</li>
+              </ul>
             </div>
-            <div class="card">
-                <i class="fas fa-bus"></i>
-                <h3>School Bus</h3>
-                <p>Child safe arrival notifications</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-microchip"></i>
-                <h3>Fuel Monitors</h3>
-                <p>Efficiency control & optimization</p>
-            </div>
+          </div>
+
+      </div>
+    </section>
+    <section id="products" class="container" style="margin: 100px auto">
+      <h2 class="section-title">Our Products</h2>
+      <div class="grid-4">
+        <div class="card">
+          <i class="fas fa-map-pin"></i>
+          <h3>Standard GPS</h3>
+          <p>Real-time & accurate tracking for personal vehicles</p>
         </div>
-        <!-- Products Images Carousel -->
-        <div style="margin-top: 50px; display: flex; justify-content: center;">
-            <div class="image-carousel" style="max-width: 700px;">
-                <div class="carousel-container" id="productsCarousel">
-                    <button class="carousel-nav prev" onclick="changeSlide('productsCarousel', -1)">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="carousel-nav next" onclick="changeSlide('productsCarousel', 1)">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="carousel-slides" id="productsCarouselSlides">
-                        <div class="carousel-slide">
-                            <img src="assets/img1.jpeg" alt="GPS Tracking Device">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="assets/img2.jpeg" alt="Standard GPS Tracker">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="assets/img3.jpeg" alt="Advanced Fleet System">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-dots" id="productsCarouselDots">
-                    <button class="carousel-dot active" onclick="goToSlide('productsCarousel', 0)"></button>
-                    <button class="carousel-dot" onclick="goToSlide('productsCarousel', 1)"></button>
-                    <button class="carousel-dot" onclick="goToSlide('productsCarousel', 2)"></button>
-                </div>
-            </div>
+        <div class="card">
+          <i class="fas fa-truck"></i>
+          <h3>Advanced Fleet</h3>
+          <p>Fuel monitoring + vehicle diagnostics</p>
         </div>
+        <div class="card">
+          <i class="fas fa-bus"></i>
+          <h3>School Bus</h3>
+          <p>Child safe arrival notifications</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-microchip"></i>
+          <h3>Fuel Monitors</h3>
+          <p>Efficiency control & optimization</p>
+        </div>
+      </div>
+      <!-- Products Images Carousel -->
+      <div style="margin-top: 50px; display: flex; justify-content: center">
+        <div class="image-carousel" style="max-width: 700px">
+          <div class="carousel-container" id="productsCarousel">
+            <button
+              class="carousel-nav prev"
+              onclick="changeSlide('productsCarousel', -1)"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="carousel-nav next"
+              onclick="changeSlide('productsCarousel', 1)"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="carousel-slides" id="productsCarouselSlides">
+              <div class="carousel-slide">
+                <img src="assets/img1.jpeg" alt="GPS Tracking Device" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/img2.jpeg" alt="Standard GPS Tracker" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/img3.jpeg" alt="Advanced Fleet System" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots" id="productsCarouselDots">
+            <button
+              class="carousel-dot active"
+              onclick="goToSlide('productsCarousel', 0)"
+            ></button>
+            <button
+              class="carousel-dot"
+              onclick="goToSlide('productsCarousel', 1)"
+            ></button>
+            <button
+              class="carousel-dot"
+              onclick="goToSlide('productsCarousel', 2)"
+            ></button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="container" style="margin: 100px auto;">
-        <h2 class="section-title">How It Works</h2>
-        <div class="steps">
-            <div class="step-item">
-                <div class="step-num">1</div>
-                <h4>Contact Us</h4>
-                <p style="color: var(--text-light); margin-top: 8px;"><i class="fas fa-phone"></i> Call or fill form</p>
-            </div>
-            <div class="step-item">
-                <div class="step-num">2</div>
-                <h4>Install Device</h4>
-                <p style="color: var(--text-light); margin-top: 8px;"><i class="fas fa-tools"></i> At your location</p>
-            </div>
-            <div class="step-item">
-                <div class="step-num">3</div>
-                <h4>Set Up App</h4>
-                <p style="color: var(--text-light); margin-top: 8px;"><i class="fas fa-mobile-alt"></i> Quick activation</p>
-            </div>
-            <div class="step-item">
-                <div class="step-num">4</div>
-                <h4>Start Tracking</h4>
-                <p style="color: var(--text-light); margin-top: 8px;"><i class="fas fa-satellite"></i> Anytime, anywhere</p>
-            </div>
+    <section class="container" style="margin: 100px auto">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <h4>Contact Us</h4>
+          <p style="color: var(--text-light); margin-top: 8px">
+            <i class="fas fa-phone"></i> Call or fill form
+          </p>
         </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <h4>Install Device</h4>
+          <p style="color: var(--text-light); margin-top: 8px">
+            <i class="fas fa-tools"></i> At your location
+          </p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <h4>Set Up App</h4>
+          <p style="color: var(--text-light); margin-top: 8px">
+            <i class="fas fa-mobile-alt"></i> Quick activation
+          </p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <h4>Start Tracking</h4>
+          <p style="color: var(--text-light); margin-top: 8px">
+            <i class="fas fa-satellite"></i> Anytime, anywhere
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- WHY CHOOSE US + TESTIMONIALS -->
-    <section class="container" style="margin: 100px auto;">
-        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
-            <div style="flex: 1 1 350px;">
-                <h2 class="section-title">Why Choose Us</h2>
-                <ul style="list-style: none; margin-top: 20px;">
-                    <li style="padding: 12px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
-                        <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                        <span>Accurate & Reliable Technology</span>
-                    </li>
-                    <li style="padding: 12px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
-                        <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                        <span>Affordable Pricing Plans</span>
-                    </li>
-                    <li style="padding: 12px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
-                        <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                        <span>24/7 Customer Support</span>
-                    </li>
-                    <li style="padding: 12px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
-                        <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                        <span>User-Friendly Mobile App</span>
-                    </li>
-                    <li style="padding: 12px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
-                        <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                        <span>Customized Solutions</span>
-                    </li>
-                </ul>
-            </div>
-            <div style="flex: 2 1 450px;" class="testimonials">
-                <h2 style="color: var(--secondary-color); margin-bottom: 30px; font-size: 2.2rem; font-weight: 800;">⭐ Testimonials</h2>
-                <div class="testi-card">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"Excellent service and quick installation. Very reliable GPS tracking system. Highly recommended!"</p>
-                    <p style="font-weight: 700; color: var(--primary-color); margin-top: 16px;">– Happy Customer</p>
-                    <p style="margin-top: 8px; color: var(--text-light);"><i class="fas fa-envelope"></i> vaishnavipadgal@gmail.com</p>
-                </div>
-                <div class="testi-card" style="margin-top: 20px;">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"KS Enterprises helped us manage our fleet efficiently. The dashboard is intuitive and the support team is always responsive."</p>
-                    <p style="font-weight: 700; color: var(--primary-color); margin-top: 16px;">– Transport Business Owner</p>
-                </div>
-            </div>
+    <section class="container" style="margin: 100px auto">
+      <div style="display: flex; flex-wrap: wrap; gap: 40px">
+        <div style="flex: 1 1 350px">
+          <h2 class="section-title">Why Choose Us</h2>
+          <ul style="list-style: none; margin-top: 20px">
+            <li
+              style="
+                padding: 12px 0;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <i
+                class="fas fa-check-circle"
+                style="color: var(--primary-color); font-size: 1.3rem"
+              ></i>
+              <span>Accurate & Reliable Technology</span>
+            </li>
+            <li
+              style="
+                padding: 12px 0;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <i
+                class="fas fa-check-circle"
+                style="color: var(--primary-color); font-size: 1.3rem"
+              ></i>
+              <span>Affordable Pricing Plans</span>
+            </li>
+            <li
+              style="
+                padding: 12px 0;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <i
+                class="fas fa-check-circle"
+                style="color: var(--primary-color); font-size: 1.3rem"
+              ></i>
+              <span>24/7 Customer Support</span>
+            </li>
+            <li
+              style="
+                padding: 12px 0;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <i
+                class="fas fa-check-circle"
+                style="color: var(--primary-color); font-size: 1.3rem"
+              ></i>
+              <span>User-Friendly Mobile App</span>
+            </li>
+            <li
+              style="
+                padding: 12px 0;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <i
+                class="fas fa-check-circle"
+                style="color: var(--primary-color); font-size: 1.3rem"
+              ></i>
+              <span>Customized Solutions</span>
+            </li>
+          </ul>
         </div>
+        <div style="flex: 2 1 450px" class="testimonials">
+          <h2
+            style="
+              color: var(--secondary-color);
+              margin-bottom: 30px;
+              font-size: 2.2rem;
+              font-weight: 800;
+            "
+          >
+            ⭐ Testimonials
+          </h2>
+          <div class="testi-card">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              "Excellent service and quick installation. Very reliable GPS
+              tracking system. Highly recommended!"
+            </p>
+            <p
+              style="
+                font-weight: 700;
+                color: var(--primary-color);
+                margin-top: 16px;
+              "
+            >
+              – Happy Customer
+            </p>
+            <p style="margin-top: 8px; color: var(--text-light)">
+              <i class="fas fa-envelope"></i> vaishnavipadgal@gmail.com
+            </p>
+          </div>
+          <div class="testi-card" style="margin-top: 20px">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              "KS Enterprises helped us manage our fleet efficiently. The
+              dashboard is intuitive and the support team is always responsive."
+            </p>
+            <p
+              style="
+                font-weight: 700;
+                color: var(--primary-color);
+                margin-top: 16px;
+              "
+            >
+              – Transport Business Owner
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ -->
-    <section class="container" style="margin: 100px auto;">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <span class="faq-question">
-                <i class="fas fa-question-circle"></i>
-                <strong>How accurate is your GPS tracking?</strong>
-            </span>
-            <p style="margin-top: 8px; font-weight: 400; color: var(--text-light);">High precision, real-time tracking with accuracy up to 3-5 meters.</p>
-        </div>
-        <div class="faq-item">
-            <span class="faq-question">
-                <i class="fas fa-question-circle"></i>
-                <strong>Do you provide installation?</strong>
-            </span>
-            <p style="margin-top: 8px; font-weight: 400; color: var(--text-light);">Yes, we offer professional on-site installation services.</p>
-        </div>
-        <div class="faq-item">
-            <span class="faq-question">
-                <i class="fas fa-question-circle"></i>
-                <strong>Is there a warranty?</strong>
-            </span>
-            <p style="margin-top: 8px; font-weight: 400; color: var(--text-light);">Warranty available on selected devices with comprehensive coverage.</p>
-        </div>
-        <div class="faq-item">
-            <span class="faq-question">
-                <i class="fas fa-question-circle"></i>
-                <strong>Can I track from mobile?</strong>
-            </span>
-            <p style="margin-top: 8px; font-weight: 400; color: var(--text-light);">Yes, track your vehicles anytime via our user-friendly mobile app.</p>
-        </div>
+    <section class="container" style="margin: 100px auto">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <span class="faq-question">
+          <i class="fas fa-question-circle"></i>
+          <strong>How accurate is your GPS tracking?</strong>
+        </span>
+        <p style="margin-top: 8px; font-weight: 400; color: var(--text-light)">
+          High precision, real-time tracking with accuracy up to 3-5 meters.
+        </p>
+      </div>
+      <div class="faq-item">
+        <span class="faq-question">
+          <i class="fas fa-question-circle"></i>
+          <strong>Do you provide installation?</strong>
+        </span>
+        <p style="margin-top: 8px; font-weight: 400; color: var(--text-light)">
+          Yes, we offer professional on-site installation services.
+        </p>
+      </div>
+      <div class="faq-item">
+        <span class="faq-question">
+          <i class="fas fa-question-circle"></i>
+          <strong>Is there a warranty?</strong>
+        </span>
+        <p style="margin-top: 8px; font-weight: 400; color: var(--text-light)">
+          Warranty available on selected devices with comprehensive coverage.
+        </p>
+      </div>
+      <div class="faq-item">
+        <span class="faq-question">
+          <i class="fas fa-question-circle"></i>
+          <strong>Can I track from mobile?</strong>
+        </span>
+        <p style="margin-top: 8px; font-weight: 400; color: var(--text-light)">
+          Yes, track your vehicles anytime via our user-friendly mobile app.
+        </p>
+      </div>
     </section>
 
     <!-- CONTACT US -->
     <section id="contact" class="container contact-section">
-        <div class="contact-flex">
-            <div class="contact-info">
-                <h2>📞 Contact Us</h2>
-                <p><i class="fas fa-map-pin"></i> KS Enterprises, (Your Business Location)</p>
-                <p><i class="fas fa-phone-alt"></i> +91-9270220876</p>
-                <p><i class="fas fa-envelope"></i> vaishnavipadgal@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vaishnavipadgal@gmail.com&su=GPS%20Tracking%20Enquiry%20-%20KS%20Enterprises&body=Dear%20KS%20Enterprises%20Team%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20GPS%20tracking%20solutions.%0A%0APlease%20provide%20me%20with%20more%20information%20and%20pricing%20details.%0A%0AThank%20you%2C" target="_blank" title="Email (Gmail)">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://wa.me/919270220876?text=Hello%20KS%20Enterprises%2C%20I%20am%20interested%20in%20your%20GPS%20tracking%20solutions.%20Please%20provide%20me%20with%20more%20information%20and%20pricing%20details.%20Thank%20you." target="_blank" title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="#" title="Messenger">
-                        <i class="fas fa-comment-dots"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <h3>Send a Message</h3>
-                <form id="contactForm" onsubmit="sendProfessionalEmail(event)">
-                    <div class="form-group">
-                        <input type="text" id="contactName" placeholder="Your name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="contactEmail" placeholder="Email address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="contactPhone" placeholder="Phone number (optional)">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="contactMessage" rows="4" placeholder="How can we help you?" required></textarea>
-                    </div>
-                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                        <button type="submit" class="btn btn-primary" style="background: white; color: var(--primary-color); font-weight: 700;">
-                            <i class="fas fa-paper-plane"></i> Send via Email
-                        </button>
-                        <button type="button" class="btn btn-wa" onclick="sendWhatsAppMessage()">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </button>
-                    </div>
-                </form>
-                <p style="color: rgba(255,255,255,0.8); margin-top: 20px; font-size: 0.9rem;">
-                    <i class="fas fa-info-circle"></i> Clicking send opens your default mail app with a professionally formatted message.
-                </p>
-            </div>
+      <div class="contact-flex">
+        <div class="contact-info">
+          <h2>📞 Contact Us</h2>
+          <p>
+            <i class="fas fa-map-pin"></i> KS Enterprises, (Your Business
+            Location)
+          </p>
+          <p><i class="fas fa-phone-alt"></i> +91-9270220876</p>
+          <p><i class="fas fa-envelope"></i> vaishnavipadgal@gmail.com</p>
+          <div class="social-icons">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=vaishnavipadgal@gmail.com&su=GPS%20Tracking%20Enquiry%20-%20KS%20Enterprises&body=Dear%20KS%20Enterprises%20Team%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20GPS%20tracking%20solutions.%0A%0APlease%20provide%20me%20with%20more%20information%20and%20pricing%20details.%0A%0AThank%20you%2C"
+              target="_blank"
+              title="Email (Gmail)"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://wa.me/919270220876?text=Hello%20KS%20Enterprises%2C%20I%20am%20interested%20in%20your%20GPS%20tracking%20solutions.%20Please%20provide%20me%20with%20more%20information%20and%20pricing%20details.%20Thank%20you."
+              target="_blank"
+              title="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Messenger">
+              <i class="fas fa-comment-dots"></i>
+            </a>
+          </div>
         </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contactForm" onsubmit="sendProfessionalEmail(event)">
+            <div class="form-group">
+              <input
+                type="text"
+                id="contactName"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="contactEmail"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="contactPhone"
+                placeholder="Phone number (optional)"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="contactMessage"
+                rows="4"
+                placeholder="How can we help you?"
+                required
+              ></textarea>
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="
+                  background: white;
+                  color: var(--primary-color);
+                  font-weight: 700;
+                "
+              >
+                <i class="fas fa-paper-plane"></i> Send via Email
+              </button>
+              <button
+                type="button"
+                class="btn btn-wa"
+                onclick="sendWhatsAppMessage()"
+              >
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </button>
+            </div>
+          </form>
+  
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <div class="footer">
-        <div class="container">
-            <div style="font-size: 1rem;">
-                © 2026 KS Enterprises — GPS Tracking Solutions
-            </div>
-            <div style="font-size: 1rem;">
-                <i class="fas fa-envelope"></i> vaishnavipadgal@gmail.com &nbsp;&nbsp;
-                <i class="fas fa-phone"></i> +91-9270220876
-            </div>
+      <div class="container">
+        <div style="font-size: 1rem">
+          © 2026 KS Enterprises — GPS Tracking Solutions
         </div>
+        <div style="font-size: 1rem">
+          <i class="fas fa-envelope"></i> vaishnavipadgal@gmail.com &nbsp;&nbsp;
+          <i class="fas fa-phone"></i> +91-9270220876
+        </div>
+      </div>
     </div>
-
-    <!-- Assets Note -->
-    <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 100%); border-radius: 60px; margin: 30px; font-size: 0.95rem; box-shadow: var(--shadow-sm);">
-        <i class="fas fa-check-circle" style="color: #25D366; margin-right: 8px; font-size: 1.2rem;"></i>
-        <strong style="color: var(--primary-color);">Images Successfully Added!</strong>
-        <p style="margin-top: 8px; color: var(--text-light);">All images are now displayed from the assets folder</p>
-    </div>
-
     <script>
-        // Scroll progress indicator
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            document.getElementById('scrollIndicator').style.width = scrollPercent + '%';
+      // Scroll progress indicator
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.pageYOffset;
+        const docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        document.getElementById("scrollIndicator").style.width =
+          scrollPercent + "%";
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe cards and sections
+      document
+        .querySelectorAll(".card, .step-item, .testi-card")
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(20px)";
+          el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(el);
         });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
+      // Image Carousel Functionality
+      const carousels = {
+        heroCarousel: { currentIndex: 0, intervalId: null, isPaused: false },
+        productsCarousel: {
+          currentIndex: 0,
+          intervalId: null,
+          isPaused: false,
+        },
+      };
+
+      function updateCarousel(carouselId) {
+        const carousel = carousels[carouselId];
+        const slides = document.getElementById(carouselId + "Slides");
+        const dots = document.querySelectorAll(
+          `#${carouselId}Dots .carousel-dot`,
+        );
+
+        if (!slides) return;
+
+        // Update slide position
+        slides.style.transform = `translateX(-${carousel.currentIndex * 33.333}%)`;
+
+        // Update dots
+        dots.forEach((dot, index) => {
+          if (index === carousel.currentIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function changeSlide(carouselId, direction) {
+        const carousel = carousels[carouselId];
+        const totalSlides = 3;
+
+        carousel.currentIndex += direction;
+
+        if (carousel.currentIndex < 0) {
+          carousel.currentIndex = totalSlides - 1;
+        } else if (carousel.currentIndex >= totalSlides) {
+          carousel.currentIndex = 0;
+        }
+
+        updateCarousel(carouselId);
+      }
+
+      function goToSlide(carouselId, index) {
+        const carousel = carousels[carouselId];
+        carousel.currentIndex = index;
+        updateCarousel(carouselId);
+
+        // Reset auto-play timer
+        if (carousel.intervalId) {
+          clearInterval(carousel.intervalId);
+          startAutoPlay(carouselId);
+        }
+      }
+
+      function startAutoPlay(carouselId) {
+        const carousel = carousels[carouselId];
+
+        // Clear existing interval
+        if (carousel.intervalId) {
+          clearInterval(carousel.intervalId);
+        }
+
+        // Start auto-play (change slide every 4 seconds)
+        carousel.intervalId = setInterval(() => {
+          if (!carousel.isPaused) {
+            changeSlide(carouselId, 1);
+          }
+        }, 4000);
+      }
+
+      function pauseCarousel(carouselId) {
+        carousels[carouselId].isPaused = true;
+      }
+
+      function resumeCarousel(carouselId) {
+        carousels[carouselId].isPaused = false;
+      }
+
+      // Initialize carousels when page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialize hero carousel
+        updateCarousel("heroCarousel");
+        startAutoPlay("heroCarousel");
+
+        // Initialize products carousel
+        updateCarousel("productsCarousel");
+        startAutoPlay("productsCarousel");
+
+        // Pause on hover for hero carousel
+        const heroCarouselContainer = document.getElementById("heroCarousel");
+        if (heroCarouselContainer) {
+          heroCarouselContainer.addEventListener("mouseenter", () =>
+            pauseCarousel("heroCarousel"),
+          );
+          heroCarouselContainer.addEventListener("mouseleave", () =>
+            resumeCarousel("heroCarousel"),
+          );
+        }
+
+        // Pause on hover for products carousel
+        const productsCarouselContainer =
+          document.getElementById("productsCarousel");
+        if (productsCarouselContainer) {
+          productsCarouselContainer.addEventListener("mouseenter", () =>
+            pauseCarousel("productsCarousel"),
+          );
+          productsCarouselContainer.addEventListener("mouseleave", () =>
+            resumeCarousel("productsCarousel"),
+          );
+        }
+      });
+
+      // Auto-play carousel when section is visible (using Intersection Observer)
+      const carouselObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const carouselId = entry.target.id;
+            if (entry.isIntersecting) {
+              // Resume auto-play when carousel is visible
+              if (
+                carouselId === "heroCarousel" ||
+                carouselId === "productsCarousel"
+              ) {
+                resumeCarousel(carouselId);
+                if (!carousels[carouselId].intervalId) {
+                  startAutoPlay(carouselId);
+                }
+              }
             } else {
-                navbar.classList.remove('scrolled');
+              // Pause auto-play when carousel is not visible
+              if (
+                carouselId === "heroCarousel" ||
+                carouselId === "productsCarousel"
+              ) {
+                pauseCarousel(carouselId);
+              }
             }
+          });
+        },
+        { threshold: 0.3 },
+      );
+
+      // Observe carousels
+      document.addEventListener("DOMContentLoaded", () => {
+        const heroCarousel = document.getElementById("heroCarousel");
+        const productsCarousel = document.getElementById("productsCarousel");
+        if (heroCarousel) carouselObserver.observe(heroCarousel);
+        if (productsCarousel) carouselObserver.observe(productsCarousel);
+      });
+
+      // Professional Email Formatter (short, with highlighted client request)
+      function formatProfessionalEmail(name, email, phone, message) {
+        const currentDate = new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
         });
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe cards and sections
-        document.querySelectorAll('.card, .step-item, .testi-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-
-        // Image Carousel Functionality
-        const carousels = {
-            heroCarousel: { currentIndex: 0, intervalId: null, isPaused: false },
-            productsCarousel: { currentIndex: 0, intervalId: null, isPaused: false }
-        };
-
-        function updateCarousel(carouselId) {
-            const carousel = carousels[carouselId];
-            const slides = document.getElementById(carouselId + 'Slides');
-            const dots = document.querySelectorAll(`#${carouselId}Dots .carousel-dot`);
-            
-            if (!slides) return;
-            
-            // Update slide position
-            slides.style.transform = `translateX(-${carousel.currentIndex * 33.333}%)`;
-            
-            // Update dots
-            dots.forEach((dot, index) => {
-                if (index === carousel.currentIndex) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        }
-
-        function changeSlide(carouselId, direction) {
-            const carousel = carousels[carouselId];
-            const totalSlides = 3;
-            
-            carousel.currentIndex += direction;
-            
-            if (carousel.currentIndex < 0) {
-                carousel.currentIndex = totalSlides - 1;
-            } else if (carousel.currentIndex >= totalSlides) {
-                carousel.currentIndex = 0;
-            }
-            
-            updateCarousel(carouselId);
-        }
-
-        function goToSlide(carouselId, index) {
-            const carousel = carousels[carouselId];
-            carousel.currentIndex = index;
-            updateCarousel(carouselId);
-            
-            // Reset auto-play timer
-            if (carousel.intervalId) {
-                clearInterval(carousel.intervalId);
-                startAutoPlay(carouselId);
-            }
-        }
-
-        function startAutoPlay(carouselId) {
-            const carousel = carousels[carouselId];
-            
-            // Clear existing interval
-            if (carousel.intervalId) {
-                clearInterval(carousel.intervalId);
-            }
-            
-            // Start auto-play (change slide every 4 seconds)
-            carousel.intervalId = setInterval(() => {
-                if (!carousel.isPaused) {
-                    changeSlide(carouselId, 1);
-                }
-            }, 4000);
-        }
-
-        function pauseCarousel(carouselId) {
-            carousels[carouselId].isPaused = true;
-        }
-
-        function resumeCarousel(carouselId) {
-            carousels[carouselId].isPaused = false;
-        }
-
-        // Initialize carousels when page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            // Initialize hero carousel
-            updateCarousel('heroCarousel');
-            startAutoPlay('heroCarousel');
-            
-            // Initialize products carousel
-            updateCarousel('productsCarousel');
-            startAutoPlay('productsCarousel');
-            
-            // Pause on hover for hero carousel
-            const heroCarouselContainer = document.getElementById('heroCarousel');
-            if (heroCarouselContainer) {
-                heroCarouselContainer.addEventListener('mouseenter', () => pauseCarousel('heroCarousel'));
-                heroCarouselContainer.addEventListener('mouseleave', () => resumeCarousel('heroCarousel'));
-            }
-            
-            // Pause on hover for products carousel
-            const productsCarouselContainer = document.getElementById('productsCarousel');
-            if (productsCarouselContainer) {
-                productsCarouselContainer.addEventListener('mouseenter', () => pauseCarousel('productsCarousel'));
-                productsCarouselContainer.addEventListener('mouseleave', () => resumeCarousel('productsCarousel'));
-            }
-        });
-
-        // Auto-play carousel when section is visible (using Intersection Observer)
-        const carouselObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                const carouselId = entry.target.id;
-                if (entry.isIntersecting) {
-                    // Resume auto-play when carousel is visible
-                    if (carouselId === 'heroCarousel' || carouselId === 'productsCarousel') {
-                        resumeCarousel(carouselId);
-                        if (!carousels[carouselId].intervalId) {
-                            startAutoPlay(carouselId);
-                        }
-                    }
-                } else {
-                    // Pause auto-play when carousel is not visible
-                    if (carouselId === 'heroCarousel' || carouselId === 'productsCarousel') {
-                        pauseCarousel(carouselId);
-                    }
-                }
-            });
-        }, { threshold: 0.3 });
-
-        // Observe carousels
-        document.addEventListener('DOMContentLoaded', () => {
-            const heroCarousel = document.getElementById('heroCarousel');
-            const productsCarousel = document.getElementById('productsCarousel');
-            if (heroCarousel) carouselObserver.observe(heroCarousel);
-            if (productsCarousel) carouselObserver.observe(productsCarousel);
-        });
-
-        // Professional Email Formatter (short, with highlighted client request)
-        function formatProfessionalEmail(name, email, phone, message) {
-            const currentDate = new Date().toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'short', 
-                day: 'numeric' 
-            });
-            
-            const emailBody = `Dear KS Enterprises Team,
+        const emailBody = `Dear KS Enterprises Team,
 
 Client details
 ----------------
 Name  : ${name}
-Email : ${email}${phone ? '\nPhone : ' + phone : ''}
+Email : ${email}${phone ? "\nPhone : " + phone : ""}
 Date  : ${currentDate}
 
 ====================
@@ -574,18 +915,18 @@ Kindly share relevant details, pricing and next steps.
 
 Best regards,
 ${name}
-${email}${phone ? '\n' + phone : ''}`;
+${email}${phone ? "\n" + phone : ""}`;
 
-            return emailBody;
-        }
+        return emailBody;
+      }
 
-        // WhatsApp message (compact, bold request)
-        function formatWhatsAppMessage(name, email, phone, message) {
-            const whatsappText = `Hello KS Enterprises,
+      // WhatsApp message (compact, bold request)
+      function formatWhatsAppMessage(name, email, phone, message) {
+        const whatsappText = `Hello KS Enterprises,
 
 *Client details*
 Name: ${name}
-Email: ${email}${phone ? '\nPhone: ' + phone : ''}
+Email: ${email}${phone ? "\nPhone: " + phone : ""}
 
 *Client request*
 *${message}*
@@ -594,56 +935,69 @@ Please share details and pricing.
 
 Thank you.`;
 
-            return whatsappText;
+        return whatsappText;
+      }
+
+      // Send Professional Email (Gmail compose)
+      function sendProfessionalEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const phone = document.getElementById("contactPhone").value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
+
+        if (!name || !email || !message) {
+          alert(
+            "Please fill in all required fields (Name, Email, and Message).",
+          );
+          return;
         }
 
-        // Send Professional Email (Gmail compose)
-        function sendProfessionalEmail(event) {
-            event.preventDefault();
-            
-            const name = document.getElementById('contactName').value.trim();
-            const email = document.getElementById('contactEmail').value.trim();
-            const phone = document.getElementById('contactPhone').value.trim();
-            const message = document.getElementById('contactMessage').value.trim();
-            
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields (Name, Email, and Message).');
-                return;
-            }
-            
-            // Validate email format
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-            
-            const subject = encodeURIComponent('GPS Tracking Enquiry - KS Enterprises');
-            const body = encodeURIComponent(formatProfessionalEmail(name, email, phone, message));
-            const to = encodeURIComponent('vaishnavipadgal@gmail.com');
-            
-            // Open Gmail compose in a new tab
-            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
-            window.open(gmailUrl, '_blank');
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
         }
 
-        // Send WhatsApp Message
-        function sendWhatsAppMessage() {
-            const name = document.getElementById('contactName').value.trim();
-            const email = document.getElementById('contactEmail').value.trim();
-            const phone = document.getElementById('contactPhone').value.trim();
-            const message = document.getElementById('contactMessage').value.trim();
-            
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields (Name, Email, and Message) before sending via WhatsApp.');
-                return;
-            }
-            
-            const whatsappText = encodeURIComponent(formatWhatsAppMessage(name, email, phone, message));
-            const whatsappNumber = '919270220876'; // WhatsApp number without + sign
-            
-            window.open(`https://wa.me/${whatsappNumber}?text=${whatsappText}`, '_blank');
+        const subject = encodeURIComponent(
+          "GPS Tracking Enquiry - KS Enterprises",
+        );
+        const body = encodeURIComponent(
+          formatProfessionalEmail(name, email, phone, message),
+        );
+        const to = encodeURIComponent("vaishnavipadgal@gmail.com");
+
+        // Open Gmail compose in a new tab
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+        window.open(gmailUrl, "_blank");
+      }
+
+      // Send WhatsApp Message
+      function sendWhatsAppMessage() {
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const phone = document.getElementById("contactPhone").value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
+
+        if (!name || !email || !message) {
+          alert(
+            "Please fill in all required fields (Name, Email, and Message) before sending via WhatsApp.",
+          );
+          return;
         }
+
+        const whatsappText = encodeURIComponent(
+          formatWhatsAppMessage(name, email, phone, message),
+        );
+        const whatsappNumber = "919270220876"; // WhatsApp number without + sign
+
+        window.open(
+          `https://wa.me/${whatsappNumber}?text=${whatsappText}`,
+          "_blank",
+        );
+      }
     </script>
-</body>
+  </body>
 </html>
