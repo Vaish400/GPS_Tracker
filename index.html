@@ -1,23 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KS Enterprises | GPS Tracking Solutions</title>
-    <!-- Font Awesome 6 (free) for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KS Enterprises | GPS Tracking Solutions</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="KS Enterprises provides reliable and secure GPS tracking solutions in Pandharpur. Contact us for professional vehicle tracking services." />
+  <meta name="author" content="KS Enterprises" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
   <body>
     <!-- Scroll Progress Indicator -->
     <div class="scroll-indicator" id="scrollIndicator"></div>
@@ -574,90 +581,60 @@
     <!-- CONTACT US -->
     <section id="contact" class="container contact-section">
       <div class="contact-flex">
+
         <div class="contact-info">
           <h2>📞 Contact Us</h2>
-          <p>
-            <i class="fas fa-map-pin"></i> KS Enterprises, Pandharpur
-          </p>
+          <p><i class="fas fa-map-pin"></i> KS Enterprises, Pandharpur</p>
           <p><i class="fas fa-phone-alt"></i> +91-9322614543</p>
           <p><i class="fas fa-envelope"></i> ksenterprises.pandharpur@gmail.com</p>
-          <div class="social-icons">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=ksenterprises.pandharpur@gmail.com&su=GPS%20Tracking%20Enquiry%20-%20KS%20Enterprises&body=Dear%20KS%20Enterprises%20Team%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20GPS%20tracking%20solutions.%0A%0APlease%20provide%20me%20with%20more%20information%20and%20pricing%20details.%0A%0AThank%20you%2C"
-              target="_blank"
-              title="Email (Gmail)"
-            >
+
+          <p style="margin-top:15px; font-size:0.9rem;">
+            We respect your privacy. Your information will only be used to respond to your enquiry.
+          </p>
+
+          <div class="social-icons" style="margin-top:15px;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ksenterprises.pandharpur@gmail.com" target="_blank" title="Email">
               <i class="fas fa-envelope"></i>
             </a>
-            <a
-              href="https://wa.me/919322614543?text=Hello%20KS%20Enterprises%2C%20I%20am%20interested%20in%20your%20GPS%20tracking%20solutions.%20Please%20provide%20me%20with%20more%20information%20and%20pricing%20details.%20Thank%20you."
-              target="_blank"
-              title="WhatsApp"
-            >
+            <a href="https://wa.me/919322614543" target="_blank" title="WhatsApp">
               <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="#" title="Messenger">
-              <i class="fas fa-comment-dots"></i>
             </a>
           </div>
         </div>
+
         <div class="contact-form">
           <h3>Send a Message</h3>
-          <form id="contactForm" onsubmit="sendProfessionalEmail(event)">
+
+          <form id="contactForm" onsubmit="sendEmail(event)">
             <div class="form-group">
-              <input
-                type="text"
-                id="contactName"
-                placeholder="Your name"
-                required
-              />
+              <input type="text" id="contactName" placeholder="Your Name" required />
             </div>
+
             <div class="form-group">
-              <input
-                type="email"
-                id="contactEmail"
-                placeholder="Email address"
-                required
-              />
+              <input type="email" id="contactEmail" placeholder="Email Address" required />
             </div>
+
             <div class="form-group">
-              <input
-                type="tel"
-                id="contactPhone"
-                placeholder="Phone number (optional)"
-              />
+              <input type="tel" id="contactPhone" placeholder="Phone Number (optional)" />
             </div>
+
             <div class="form-group">
-              <textarea
-                id="contactMessage"
-                rows="4"
-                placeholder="How can we help you?"
-                required
-              ></textarea>
+              <textarea id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
             </div>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap">
-              <button
-                type="submit"
-                class="btn btn-primary"
-                style="
-                  background: white;
-                  color: var(--primary-color);
-                  font-weight: 700;
-                "
-              >
+
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button type="submit" class="btn btn-primary">
                 <i class="fas fa-paper-plane"></i> Send via Email
               </button>
-              <button
-                type="button"
-                class="btn btn-wa"
-                onclick="sendWhatsAppMessage()"
-              >
-                <i class="fab fa-whatsapp"></i> WhatsApp
+
+              <button type="button" class="btn btn-wa" onclick="sendWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
               </button>
             </div>
+
           </form>
-  
         </div>
+
       </div>
     </section>
 
@@ -888,57 +865,7 @@
         if (productsCarousel) carouselObserver.observe(productsCarousel);
       });
 
-      // Professional Email Formatter (short, with highlighted client request)
-      function formatProfessionalEmail(name, email, phone, message) {
-        const currentDate = new Date().toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        });
-
-        const emailBody = `Dear KS Enterprises Team,
-
-Client details
-----------------
-Name  : ${name}
-Email : ${email}${phone ? "\nPhone : " + phone : ""}
-Date  : ${currentDate}
-
-====================
-CLIENT REQUEST
-====================
-**${message}**
-====================
-
-Kindly share relevant details, pricing and next steps.
-
-Best regards,
-${name}
-${email}${phone ? "\n" + phone : ""}`;
-
-        return emailBody;
-      }
-
-      // WhatsApp message (compact, bold request)
-      function formatWhatsAppMessage(name, email, phone, message) {
-        const whatsappText = `Hello KS Enterprises,
-
-*Client details*
-Name: ${name}
-Email: ${email}${phone ? "\nPhone: " + phone : ""}
-
-*Client request*
-*${message}*
-
-Please share details and pricing.
-
-Thank you.`;
-
-        return whatsappText;
-      }
-
-      // Send Professional Email (Gmail compose)
-      function sendProfessionalEmail(event) {
+      function sendEmail(event) {
         event.preventDefault();
 
         const name = document.getElementById("contactName").value.trim();
@@ -947,54 +874,47 @@ Thank you.`;
         const message = document.getElementById("contactMessage").value.trim();
 
         if (!name || !email || !message) {
-          alert(
-            "Please fill in all required fields (Name, Email, and Message).",
-          );
+          alert("Please fill all required fields.");
           return;
         }
 
-        // Validate email format
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-          alert("Please enter a valid email address.");
-          return;
-        }
+        const subject = encodeURIComponent("GPS Tracking Enquiry - KS Enterprises");
 
-        const subject = encodeURIComponent(
-          "GPS Tracking Enquiry - KS Enterprises",
-        );
         const body = encodeURIComponent(
-          formatProfessionalEmail(name, email, phone, message),
+          "Name: " + name +
+          "\nEmail: " + email +
+          (phone ? "\nPhone: " + phone : "") +
+          "\n\nMessage:\n" + message
         );
-        const to = encodeURIComponent("ksenterprises.pandharpur@gmail.com");
 
-        // Open Gmail compose in a new tab
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+        const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=ksenterprises.pandharpur@gmail.com&su=" + subject + "&body=" + body;
         window.open(gmailUrl, "_blank");
       }
 
-      // Send WhatsApp Message
-      function sendWhatsAppMessage() {
+
+      function sendWhatsApp() {
+
         const name = document.getElementById("contactName").value.trim();
         const email = document.getElementById("contactEmail").value.trim();
         const phone = document.getElementById("contactPhone").value.trim();
         const message = document.getElementById("contactMessage").value.trim();
 
         if (!name || !email || !message) {
-          alert(
-            "Please fill in all required fields (Name, Email, and Message) before sending via WhatsApp.",
-          );
+          alert("Please fill all required fields before sending.");
           return;
         }
 
-        const whatsappText = encodeURIComponent(
-          formatWhatsAppMessage(name, email, phone, message),
+        const text = encodeURIComponent(
+          "Hello KS Enterprises,\n\n" +
+          "Name: " + name +
+          "\nEmail: " + email +
+          (phone ? "\nPhone: " + phone : "") +
+          "\n\nMessage:\n" + message
         );
-        const whatsappNumber = "919322614543"; // WhatsApp number without + sign
 
         window.open(
-          `https://wa.me/${whatsappNumber}?text=${whatsappText}`,
-          "_blank",
+          "https://wa.me/919322614543?text=" + text,
+          "_blank"
         );
       }
     </script>
