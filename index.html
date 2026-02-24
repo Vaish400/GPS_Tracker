@@ -876,7 +876,17 @@
         }
 
         const subject = encodeURIComponent("GPS Tracking Enquiry");
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+        const body = encodeURIComponent(
+          `Hello KS Enterprises,\n\n` +
+          `*Client details*\n` +
+          `Name: ${name}\n` +
+          `Email: ${email}\n` +
+          `Phone: ${phone}\n\n` +
+          `*Client request*\n` +
+          `*${message}*\n\n` +
+          `Please share details and pricing.\n\n` +
+          `Thank you.`
+        );
         
         window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=ksenterprises.pandharpur@gmail.com&su=${subject}&body=${body}`, "_blank");
       }
@@ -893,7 +903,17 @@
           return;
         }
 
-        const whatsappMessage = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+        const whatsappMessage = encodeURIComponent(
+          `Hello KS Enterprises,\n\n` +
+          `*Client details*\n` +
+          `Name: ${name}\n` +
+          `Email: ${email}\n` +
+          `Phone: ${phone}\n\n` +
+          `*Client request*\n` +
+          `*${message}*\n\n` +
+          `Please share details and pricing.\n\n` +
+          `Thank you.`
+        );
         
         window.open(`https://wa.me/919322614543?text=${whatsappMessage}`, "_blank");
       }
